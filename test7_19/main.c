@@ -140,3 +140,79 @@ int main()
 
 
 
+//continue跳过本次循环，直接到下一次循环的判断部分。
+//break 直接跳过循环，执行循环外部的语句。
+/*
+int main()
+{
+    int n = 1;
+
+    while(n<= 10)
+    {
+        n++;
+        if(n==5)
+            continue;
+        printf("%d\n",n);
+
+    }
+    return 0;
+}*/
+
+
+/*
+int main()
+{
+
+    printf("%d",EOF);
+    return 0;
+}*/
+
+
+
+/*
+int main()
+{
+    int ch=getchar();
+    */
+/*printf("%c",ch);*//*
+
+    putchar(ch);
+    return 0;
+}*/
+
+
+/*
+int main()
+{
+    int ch = 0;
+    while((ch=getchar()) != EOF)
+    {
+        putchar(ch);
+    }
+    return 0;
+}*/
+
+
+
+int main()
+{
+    char password[20]={0};
+    printf("请输入密码:>");
+    scanf("%s",password);
+    printf("请确认密码(Y/N):");
+    while(getchar() !='\n')
+    {
+        ;
+    }
+    char input = 0;
+    scanf("%c",&input);
+    if('Y'==input)
+    {
+        printf("确认成功\n");
+    }
+    else
+    {
+        printf("确认失败\n");
+    }
+    return 0;
+}
